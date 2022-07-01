@@ -1,0 +1,25 @@
+{
+  "name": "vella-pay",
+  "version": "1.0.1",
+  "description": "Receive payment with VellaPay widget",
+  "author": "Gabriel Ajenifuja",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack -p --config ./webpack.config.js && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vellapay",
+    "checkout",
+    "payment",
+    "widget"
+  ],
+  "devDependencies": {
+    "terser-webpack-plugin": "^4.2.2",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
