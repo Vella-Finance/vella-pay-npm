@@ -26,9 +26,11 @@ const config = {
   email: 'example@mail.com', // string - customer email
   name: "Tade Ogidan", // string - customer name
   amount: 100.00, //float - amount to pay
-  currency: "NGNT", // supported fiat NGNT,USDT,USDC
+  currency: "NGN", // supported currency  NGN USD,GBP,USDT,USDC
   merchant_id: "", // string - merchant id
-  reference: "" // string - generated reference
+  reference: "", // string - generated reference
+  custom_meta: [], // custom meta data,
+  source: "", // domain or location name widget is being called from
 };
 const vellaSDK = new VellaCheckout(key, config);
 vellaSDK.init();
