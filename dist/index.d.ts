@@ -7,6 +7,7 @@ export default class VellaCheckout {
     init: () => VellaCheckout;
     onError: (callback: any) => void;
     onSuccess: (callback: any) => void;
+    closeWidget: () => void;
     onClose: (callback: any) => void;
 }
 //# sourceMappingURL=index.d.ts.map
