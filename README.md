@@ -1,5 +1,7 @@
 # Vella Checkout
+[![NPM](https://nodei.co/npm/vella-pay.png)](https://nodei.co/npm/vella-pay/)
 
+[![NPM version](https://badgen.net/npm/v/vella-pay)](https://www.npmjs.com/package/vella-pay)
 # :rocket: Install
 
 ```bash
@@ -36,14 +38,24 @@ const vellaSDK = new VellaCheckout(key, config);
 vellaSDK.init();
 vellaSDK.onSuccess(response => {
   console.log("data", response) // success response with data
+
+  //handle logic
+   
+  //trigger close widget
+  vellaSDK.closeWidget();
 })
 vellaSDK.onError(error => {
   console.log("error", error) // error response
 });
 vellaSDK.onClose(() => {
-  console.log("widget closed") // trigger close
+  console.log("widget closed") // close response
 });;
 ```
+
+## Contributors
+##### Code Contributors
+[![](https://github.com/mfonisoebong.png?size=50)](https://github.com/mfonisoebong)
+
 
 ## Support
 If you're having trouble with Vella checkout integration, please reach out to us at hello@vella.finance or come chat with us using on https://app.vella.finance. We're happy to help you out with your integration to Vella.
